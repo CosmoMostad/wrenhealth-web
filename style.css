@@ -262,13 +262,14 @@ nav {
 }
 
 .phone-frame {
-  width: 260px;
-  background: white;
-  border-radius: 40px;
-  box-shadow: 0 32px 72px rgba(0,0,0,0.45), 0 0 0 2px rgba(255,255,255,0.3);
+  width: 256px;
+  background: #FAF7F4;
+  border-radius: 42px;
+  border: 2.5px solid rgba(255,255,255,0.6);
+  box-shadow: 0 0 0 8px rgba(255,255,255,0.15), 0 40px 80px rgba(0,0,0,0.55);
   overflow: hidden;
   position: relative;
-  padding-top: 16px;
+  padding-top: 14px;
 }
 
 .phone-notch {
@@ -422,7 +423,7 @@ nav {
   flex-shrink: 0;
 }
 
-.trust-item svg { color: var(--green); flex-shrink: 0; width: 14px; height: 14px; }
+.trust-item svg { color: var(--green); flex-shrink: 0; width: 18px; height: 18px; stroke: var(--green); }
 
 .trust-divider {
   width: 1px;
