@@ -6,7 +6,8 @@
   <title>Wren Health — Your family's health, organized and secure</title>
   <meta name="description" content="Wren Health keeps your entire family's health records in one secure, organized place. Store, share, and access health information when it matters most." />
   <link rel="stylesheet" href="style.css" />
-  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' rx='8' fill='%232D6A4F'/><path d='M16 6C11 6 7 11 7 16c0 3.5 1.8 6.5 4.5 8.2 1.2.7 2.5 1 3.5 1s2.3-.3 3.5-1C21.2 22.5 23 19.5 23 16c0-5-4-10-7-10z' fill='white' opacity='.9'/></svg>" />
+  <!-- Wren bird favicon: round body, distinct upright tail, beak pointing right -->
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%232D6A4F'/%3E%3Cg fill='white'%3E%3C!-- upright cocked tail --%3E%3Cpath d='M7 22 C6 18 6.5 13 9 10 C9.5 13 9 17 8.5 21 Z'/%3E%3C!-- body --%3E%3Cellipse cx='17' cy='22' rx='8' ry='5.5'/%3E%3C!-- head --%3E%3Ccircle cx='23' cy='16' r='4.5'/%3E%3C!-- beak --%3E%3Cpath d='M26.5 14.8 L31 16 L26.5 17.2 Z'/%3E%3C!-- eye --%3E%3Ccircle cx='24.5' cy='14.8' r='1.1' fill='%232D6A4F'/%3E%3C/g%3E%3C/svg%3E" />
 </head>
 <body>
 
@@ -15,12 +16,18 @@
   <div class="nav-inner">
     <a class="nav-logo" href="/">
       <div class="nav-logo-dot">
-        <!-- Wren bird: upswept tail (left), plump body, round head, small beak (right) -->
-        <svg viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg" fill="white">
-          <path d="M6 15 Q3 11 5 7 Q5.5 10.5 7.5 12.5Z"/>
-          <ellipse cx="11.5" cy="14" rx="5.5" ry="3.8"/>
-          <circle cx="15.5" cy="10" r="3.2"/>
-          <polygon points="18.2,9.2 20,10 18.2,10.8"/>
+        <!-- Wren bird: upright cocked tail (left), plump body (center), round head + beak (right) -->
+        <svg viewBox="0 0 22 20" xmlns="http://www.w3.org/2000/svg" fill="white">
+          <!-- upright tail: narrow, pointed, going up and slightly left — not a leaf -->
+          <path d="M4.5 16 C3.5 13 4 9.5 6 7 C6.5 9.5 6 13 5.5 16 Z"/>
+          <!-- body -->
+          <ellipse cx="12" cy="16" rx="6.5" ry="4"/>
+          <!-- head -->
+          <circle cx="17.5" cy="11.5" r="3.5"/>
+          <!-- beak: small sharp triangle, clearly a beak -->
+          <polygon points="20.5,10.8 22,11.5 20.5,12.2"/>
+          <!-- eye -->
+          <circle cx="18.8" cy="10.5" r="0.9" fill="#2D6A4F"/>
         </svg>
       </div>
       Wren Health
@@ -34,47 +41,134 @@
   </div>
 </nav>
 
+<!-- ── App Store Live Banner ── -->
+<div class="live-banner">
+  <div class="live-banner-inner">
+    <span class="live-dot"></span>
+    <span>Wren Health is now available on the App Store</span>
+    <a href="#">Download free &rarr;</a>
+  </div>
+</div>
+
 <!-- ── Hero ── -->
 <section class="hero">
   <svg class="hero-bg-shape" viewBox="0 0 1200 620" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice">
-    <circle cx="1050" cy="80" r="180"/>
-    <circle cx="1150" cy="400" r="120"/>
-    <ellipse cx="80" cy="500" rx="140" ry="100"/>
-    <circle cx="300" cy="580" r="60"/>
-    <path d="M900 50 C920 20, 960 30, 950 70 C940 100, 900 90, 900 50Z"/>
-    <circle cx="400" cy="30" r="25"/>
-    <circle cx="600" cy="600" r="40"/>
+    <circle cx="1050" cy="80" r="220"/>
+    <circle cx="1170" cy="420" r="140"/>
+    <ellipse cx="60" cy="520" rx="160" ry="110"/>
+    <circle cx="280" cy="600" r="70"/>
+    <ellipse cx="450" cy="20" rx="90" ry="55"/>
+    <circle cx="620" cy="610" r="50"/>
+    <!-- botanical leaf shapes -->
+    <path d="M1080 -20 C1100 40 1060 120 1000 130 C970 80 990 10 1080 -20Z" opacity="1"/>
+    <path d="M-10 480 C40 460 100 490 90 550 C40 570 -10 530 -10 480Z" opacity="1"/>
   </svg>
 
   <div class="hero-inner">
     <div class="hero-text">
+      <div class="hero-badge">
+        <svg width="14" height="14" viewBox="0 0 22 20" fill="white" style="flex-shrink:0">
+          <path d="M4.5 16 C3.5 13 4 9.5 6 7 C6.5 9.5 6 13 5.5 16 Z"/>
+          <ellipse cx="12" cy="16" rx="6.5" ry="4"/>
+          <circle cx="17.5" cy="11.5" r="3.5"/>
+          <polygon points="20.5,10.8 22,11.5 20.5,12.2"/>
+        </svg>
+        Now live on the App Store
+      </div>
       <h1>Your family's health,<br/><em>organized and secure.</em></h1>
-      <p>Wren Health keeps everyone's medical records, medications, allergies, and appointments in one place — accessible when you need it most.</p>
+      <p>Wren Health keeps every family member's medical records, medications, allergies, and appointments in one place — accessible in seconds, shared only on your terms.</p>
       <div class="hero-actions">
         <a href="#" class="btn-primary">
           <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.8-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M13 3.5c.73-.83 1.94-1.46 2.94-1.5.13 1.17-.34 2.35-1.04 3.19-.69.85-1.83 1.51-2.95 1.42-.15-1.15.41-2.35 1.05-3.11z"/></svg>
-          App Store
+          Download on App Store
         </a>
         <a href="#features" class="btn-secondary">See how it works</a>
       </div>
     </div>
 
     <div class="hero-graphic">
-      <img
-        src="https://images.unsplash.com/photo-1531983412531-1f49a365ffed?auto=format&fit=crop&w=700&q=80"
-        alt="Grandmother and grandchild laughing together"
-        class="hero-family-photo"
-      />
+      <div class="phone-frame">
+        <div class="phone-notch"></div>
+        <div class="phone-screen-inner">
+          <div class="mock-header">
+            <span class="mock-title">My Accounts</span>
+            <div class="mock-header-icons">
+              <div class="mock-icon-circle"></div>
+              <div class="mock-icon-circle"></div>
+            </div>
+          </div>
+          <div class="mock-section-label">MY HEALTH</div>
+          <div class="mock-card mock-card-primary">
+            <div class="mock-avatar mock-avatar-dark"></div>
+            <div class="mock-card-text">
+              <div class="mock-line mock-line-name"></div>
+              <div class="mock-line mock-line-sub"></div>
+            </div>
+          </div>
+          <div class="mock-section-label" style="margin-top:14px">FAMILY MEMBERS</div>
+          <div class="mock-grid">
+            <div class="mock-member-card">
+              <div class="mock-avatar mock-avatar-light" style="margin: 0 auto 8px;"></div>
+              <div class="mock-line" style="width:60%; margin: 0 auto 4px;"></div>
+              <div class="mock-line mock-line-sub" style="width:45%; margin: 0 auto;"></div>
+            </div>
+            <div class="mock-member-card">
+              <div class="mock-avatar mock-avatar-light" style="margin: 0 auto 8px;"></div>
+              <div class="mock-line" style="width:60%; margin: 0 auto 4px;"></div>
+              <div class="mock-line mock-line-sub" style="width:45%; margin: 0 auto;"></div>
+            </div>
+          </div>
+        </div>
+        <div class="phone-tab-bar">
+          <div class="tab-item tab-active">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#2D6A4F" stroke-width="2"><path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 00-3-3.87"/><path d="M16 3.13a4 4 0 010 7.75"/></svg>
+          </div>
+          <div class="tab-item">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="rgba(28,28,30,0.3)" stroke-width="2"><rect x="3" y="4" width="18" height="18" rx="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+          </div>
+          <div class="tab-item">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="rgba(28,28,30,0.3)" stroke-width="2"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><line x1="8.59" y1="13.51" x2="15.42" y2="17.49"/><line x1="15.41" y1="6.51" x2="8.59" y2="10.49"/></svg>
+          </div>
+          <div class="tab-item">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="rgba(28,28,30,0.3)" stroke-width="2"><circle cx="12" cy="12" r="3"/><path d="M19.4 15a1.65 1.65 0 00.33 1.82l.06.06a2 2 0 010 2.83 2 2 0 01-2.83 0l-.06-.06a1.65 1.65 0 00-1.82-.33 1.65 1.65 0 00-1 1.51V21a2 2 0 01-4 0v-.09A1.65 1.65 0 009 19.4a1.65 1.65 0 00-1.82.33l-.06.06a2 2 0 01-2.83-2.83l.06-.06A1.65 1.65 0 004.68 15a1.65 1.65 0 00-1.51-1H3a2 2 0 010-4h.09A1.65 1.65 0 004.6 9a1.65 1.65 0 00-.33-1.82l-.06-.06a2 2 0 012.83-2.83l.06.06A1.65 1.65 0 009 4.68a1.65 1.65 0 001-1.51V3a2 2 0 014 0v.09a1.65 1.65 0 001 1.51 1.65 1.65 0 001.82-.33l.06-.06a2 2 0 012.83 2.83l-.06.06A1.65 1.65 0 0019.4 9a1.65 1.65 0 001.51 1H21a2 2 0 010 4h-.09a1.65 1.65 0 00-1.51 1z"/></svg>
+          </div>
+        </div>
+      </div>
     </div>
   </div>
 </section>
+
+<!-- ── Trust strip ── -->
+<div class="trust-strip">
+  <div class="trust-strip-inner">
+    <div class="trust-item">
+      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="11" width="18" height="11" rx="2"/><path d="M7 11V7a5 5 0 0110 0v4"/></svg>
+      End-to-end encrypted
+    </div>
+    <div class="trust-divider"></div>
+    <div class="trust-item">
+      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 11.08V12a10 10 0 11-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+      Available on iOS
+    </div>
+    <div class="trust-divider"></div>
+    <div class="trust-item">
+      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="4.93" y1="4.93" x2="19.07" y2="19.07"/></svg>
+      We never sell your data
+    </div>
+    <div class="trust-divider"></div>
+    <div class="trust-item">
+      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 00-3-3.87"/><path d="M16 3.13a4 4 0 010 7.75"/></svg>
+      Built for families
+    </div>
+  </div>
+</div>
 
 <!-- ── Features ── -->
 <section id="features">
   <div class="section-inner">
     <span class="section-label">Features</span>
-    <h2 class="section-title">Everything your family needs,<br/>in one secure place</h2>
-    <p class="section-subtitle">From everyday medication reminders to emergency room visits — Wren Health has you covered.</p>
+    <h2 class="section-title">Everything your family needs,<br/>in one secure place.</h2>
+    <p class="section-subtitle">From everyday medication tracking to emergency situations — Wren Health gives you the information you need, exactly when you need it.</p>
 
     <div class="features-grid">
       <div class="feature-card">
@@ -82,42 +176,69 @@
           <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#2D6A4F" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/><polyline points="10 9 9 9 8 9"/></svg>
         </div>
         <h3>Complete Health Profiles</h3>
-        <p>Store blood type, allergies, medications, medical history, insurance, and emergency contacts for every family member.</p>
+        <p>Store blood type, allergies, medications, medical history, insurance details, and emergency contacts for every family member.</p>
       </div>
+
       <div class="feature-card">
         <div class="feature-icon">
           <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#2D6A4F" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 00-3-3.87"/><path d="M16 3.13a4 4 0 010 7.75"/></svg>
         </div>
         <h3>The Whole Family</h3>
-        <p>Add family members of any age — kids, parents, grandparents. One account covers everyone, with individual profiles for each person.</p>
+        <p>Add family members of any age — children, parents, grandparents. One account covers everyone, with distinct profiles for each person.</p>
       </div>
+
       <div class="feature-card">
         <div class="feature-icon terracotta">
           <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#C9614A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><line x1="8.59" y1="13.51" x2="15.42" y2="17.49"/><line x1="15.41" y1="6.51" x2="8.59" y2="10.49"/></svg>
         </div>
-        <h3>Secure Sharing</h3>
-        <p>Share specific sections of a health profile with doctors, caregivers, or family members. You choose exactly what they can see.</p>
+        <h3>Controlled Sharing</h3>
+        <p>Share specific sections of a health profile with doctors, caregivers, or family members. You define exactly what they can access and for how long.</p>
       </div>
+
       <div class="feature-card">
         <div class="feature-icon">
           <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#2D6A4F" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
         </div>
         <h3>Family Health Calendar</h3>
-        <p>Track appointments, checkups, and reminders for the whole family in a shared calendar. Get notified before every visit.</p>
+        <p>Coordinate appointments and checkups for every family member in a shared calendar. Receive reminders before every visit — for yourself and those you care for.</p>
       </div>
+
       <div class="feature-card">
         <div class="feature-icon">
-          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#2D6A4F" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/></svg>
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#2D6A4F" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 9.81 19.79 19.79 0 01.1 1.18 2 2 0 012.09 0h3a2 2 0 012 1.72 12.84 12.84 0 00.7 2.81 2 2 0 01-.45 2.11L6.09 7.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45 12.84 12.84 0 002.81.7A2 2 0 0122 14.92z"/></svg>
         </div>
-        <h3>Emergency Ready</h3>
-        <p>In an emergency, pull up a complete health profile in seconds. Critical info is always accessible, even offline.</p>
+        <h3>Quick-Access Contacts</h3>
+        <p>Save your physicians' office numbers and pharmacy details directly on each profile. One tap to call — no searching required during a stressful moment.</p>
       </div>
+
       <div class="feature-card">
         <div class="feature-icon terracotta">
           <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#C9614A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M13 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V9z"/><polyline points="13 2 13 9 20 9"/></svg>
         </div>
         <h3>Document Storage</h3>
-        <p>Attach medical records, prescriptions, test results, and insurance cards directly to each family member's profile.</p>
+        <p>Attach medical records, lab results, prescription labels, and insurance cards directly to each profile. Everything in one place, always with you.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ── Use case callout ── -->
+<section class="callout-section">
+  <div class="section-inner">
+    <div class="callout-grid">
+      <div class="callout-card callout-card-green">
+        <div class="callout-icon">
+          <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M20.84 4.61a5.5 5.5 0 00-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 00-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 000-7.78z"/></svg>
+        </div>
+        <h3>Built for caregivers.</h3>
+        <p>Managing a parent's medications, specialists, and appointments is hard. Wren Health makes it organized, shareable, and accessible — for the whole care team.</p>
+      </div>
+      <div class="callout-card callout-card-light">
+        <div class="callout-icon callout-icon-green">
+          <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#2D6A4F" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 8 12 12 14 14"/></svg>
+        </div>
+        <h3>Ready in an emergency.</h3>
+        <p>When a family member can't speak for themselves, every second counts. Pull up a complete health profile in seconds — allergies, medications, blood type, emergency contacts.</p>
       </div>
     </div>
   </div>
@@ -127,45 +248,45 @@
 <section id="security" class="security-band">
   <div class="security-inner">
     <div>
-      <span class="section-label">Security</span>
-      <h2 class="section-title">Your health data stays yours</h2>
-      <p class="section-subtitle">We built Wren Health with privacy at the core — not as an afterthought. Your family's most sensitive information deserves the highest level of protection.</p>
+      <span class="section-label">Privacy &amp; Security</span>
+      <h2 class="section-title">Your health data stays yours.</h2>
+      <p class="section-subtitle">We built Wren Health with privacy at the foundation — not as a feature. Your family's most sensitive information deserves the highest level of protection, and you remain in control of every piece of it.</p>
     </div>
     <div class="security-badges">
       <div class="security-badge">
         <div class="security-badge-icon">
-          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"/><path d="M7 11V7a5 5 0 0110 0v4"/></svg>
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"/><path d="M7 11V7a5 5 0 0110 0v4"/></svg>
         </div>
         <div>
-          <h4>End-to-End Encrypted</h4>
-          <p>Your data is encrypted in transit and at rest. Only you can access it.</p>
+          <h4>Encrypted at Rest and in Transit</h4>
+          <p>Your data is encrypted end-to-end. No one — including us — can read it without your credentials.</p>
         </div>
       </div>
       <div class="security-badge">
         <div class="security-badge-icon">
-          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 11.08V12a10 10 0 11-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 11.08V12a10 10 0 11-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
         </div>
         <div>
-          <h4>HIPAA-Ready Infrastructure</h4>
-          <p>Built on enterprise-grade infrastructure designed for healthcare compliance.</p>
+          <h4>Enterprise-Grade Infrastructure</h4>
+          <p>Built on infrastructure designed for healthcare compliance and reliability.</p>
         </div>
       </div>
       <div class="security-badge">
         <div class="security-badge-icon">
-          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="4.93" y1="4.93" x2="19.07" y2="19.07"/></svg>
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="4.93" y1="4.93" x2="19.07" y2="19.07"/></svg>
         </div>
         <div>
           <h4>No Data Selling. Ever.</h4>
-          <p>We will never sell your health data to insurers, advertisers, or anyone else.</p>
+          <p>We will never sell, license, or share your health data with insurers, advertisers, or third parties.</p>
         </div>
       </div>
       <div class="security-badge">
         <div class="security-badge-icon">
-          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"/><circle cx="12" cy="12" r="3"/></svg>
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"/><circle cx="12" cy="12" r="3"/></svg>
         </div>
         <div>
-          <h4>You Control Sharing</h4>
-          <p>Share only what you choose, with who you choose, for as long as you choose.</p>
+          <h4>You Control Every Share</h4>
+          <p>Choose what to share, with whom, and revoke access at any time. No exceptions.</p>
         </div>
       </div>
     </div>
@@ -175,29 +296,51 @@
 <!-- ── CTA ── -->
 <section class="cta-section">
   <div class="section-inner">
+    <div class="cta-bird">
+      <svg viewBox="0 0 60 50" xmlns="http://www.w3.org/2000/svg" fill="#2D6A4F" opacity="0.12">
+        <path d="M11 40 C8 32 9 23 14 16 C15.5 22 14.5 31 13 40 Z"/>
+        <ellipse cx="30" cy="38" rx="17" ry="10"/>
+        <circle cx="43" cy="27" r="9"/>
+        <polygon points="51,25 58,27 51,29"/>
+      </svg>
+    </div>
     <span class="section-label">Get Started</span>
     <h2 class="section-title">One app for every person you love.</h2>
-    <p class="section-subtitle">Free to get started. No credit card required.</p>
-    <div class="hero-actions">
-      <a href="#" class="btn-primary" style="background: var(--green); color: white; box-shadow: 0 4px 16px rgba(45,106,79,0.3);">
-        <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.8-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M13 3.5c.73-.83 1.94-1.46 2.94-1.5.13 1.17-.34 2.35-1.04 3.19-.69.85-1.83 1.51-2.95 1.42-.15-1.15.41-2.35 1.05-3.11z"/></svg>
-        Download on App Store
+    <p class="section-subtitle">Free to download. No account required to explore. Set up your family's health profiles in minutes.</p>
+    <div class="hero-actions" style="justify-content: center; margin-top: 32px;">
+      <a href="#" class="btn-cta-primary">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.8-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M13 3.5c.73-.83 1.94-1.46 2.94-1.5.13 1.17-.34 2.35-1.04 3.19-.69.85-1.83 1.51-2.95 1.42-.15-1.15.41-2.35 1.05-3.11z"/></svg>
+        Download on the App Store
       </a>
     </div>
+    <p class="cta-sub">Free to download &nbsp;&middot;&nbsp; iOS &nbsp;&middot;&nbsp; No credit card required</p>
   </div>
 </section>
 
 <!-- ── Footer ── -->
 <footer>
   <div class="footer-inner">
-    <a class="footer-logo" href="/">Wren Health</a>
+    <div class="footer-brand">
+      <a class="footer-logo" href="/">
+        <div class="footer-logo-bird">
+          <svg viewBox="0 0 22 20" xmlns="http://www.w3.org/2000/svg" fill="white">
+            <path d="M4.5 16 C3.5 13 4 9.5 6 7 C6.5 9.5 6 13 5.5 16 Z"/>
+            <ellipse cx="12" cy="16" rx="6.5" ry="4"/>
+            <circle cx="17.5" cy="11.5" r="3.5"/>
+            <polygon points="20.5,10.8 22,11.5 20.5,12.2"/>
+          </svg>
+        </div>
+        Wren Health
+      </a>
+      <p class="footer-tagline">Your family's health, organized and secure.</p>
+    </div>
     <ul class="footer-links">
       <li><a href="privacy.html">Privacy Policy</a></li>
       <li><a href="terms.html">Terms of Service</a></li>
-      <li><a href="help.html">Help</a></li>
+      <li><a href="help.html">Help Center</a></li>
       <li><a href="mailto:support@wrenhealth.app">Contact</a></li>
     </ul>
-    <span style="font-size:13px;">© 2026 Wren Health. All rights reserved.</span>
+    <span class="footer-copy">&copy; 2026 Wren Health. All rights reserved.</span>
   </div>
 </footer>
 
